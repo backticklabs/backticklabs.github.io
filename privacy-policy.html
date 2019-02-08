@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134156914-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-134156914-1');
+        </script>
+
         <!-- Required Meta Tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -51,7 +61,7 @@
                                 <h3>I. Information about us as controllers of your data</h3>
                                 <p>The party responsible for this website (the "controller") for purposes of data protection law is:</p>
                                 <p>Backtick Labs GmbH<br>Tomannweg 3<br>81673 Munich<br>Germany</p>
-                                <p>Telephone: 01721333037<br><!--Fax: Fax number<br>-->Email: hello@backticklabs.com</p>
+                                <p>Telephone: 01721333037<br><!--Fax: Fax number<br>-->Email: info@backticklabs.com</p>
                                 <h3>II. The rights of users and data subjects</h3>
                                 <p>With regard to the data processing to be described in more detail below, users and data subjects have the right</p>
                                 <ul type="disc">
@@ -66,19 +76,10 @@
                                 <h3>III. Information about the data processing</h3>
                                 <p>Your data processed when using our website will be deleted or blocked as soon as the purpose for its storage ceases to apply, provided the deletion of the same is not in breach of any statutory storage obligations or unless otherwise stipulated below.</p>
         
-                                <h4>Newsletter</h4>
-                                <p>If you register for our free newsletter, the data requested from you for this purpose, i.e. your email address and, optionally, your name and address, will be sent to us. We also store the IP address of your computer and the date and time of your registration. During the registration process, we will obtain your consent to receive this newsletter and the type of content it will offer, with reference made to this privacy policy. The data collected will be used exclusively to send the newsletter and will not be passed on to third parties.</p>
-                                <p>The legal basis for this is Art. 6 Para. 1 lit. a) GDPR.</p>
-                                <p>You may revoke your prior consent to receive this newsletter under Art. 7 Para. 3 GDPR with future effect. All you have to do is inform us that you are revoking your consent or click on the unsubscribe link contained in each newsletter.</p>
-        
                                 <h4>Contact</h4>
                                 <p>If you contact us via email or the contact form, the data you provide will be used for the purpose of processing your request. We must have this data in order to process and answer your inquiry; otherwise we will not be able to answer it in full or at all.</p>
                                 <p>The legal basis for this data processing is Art. 6 Para. 1 lit. b) GDPR.</p>
                                 <p>Your data will be deleted once we have fully answered your inquiry and there is no further legal obligation to store your data, such as if an order or contract resulted therefrom.</p>
-        
-                                <h4>Follow-up comments</h4>
-                                <p>If you make posts on our website, we also offer you the opportunity to subscribe to any subsequent follow-up comments made by third parties. In order to be able to inform you about these follow-up comments, we will need to process your email address.</p>
-                                <p>The legal basis for this is Art. 6 Para. 1 lit. a) GDPR. You may revoke your prior consent to this subscription under Art. 7 Para. 3 GDPR with future effect. All you have to do is inform us that you are revoking your consent or click on the unsubscribe link contained in each email.</p>
         
                                 <h4>Google Analytics</h4>
                                 <p>We use Google Analytics on our website. This is a web analytics service provided by Google Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043 (hereinafter: Google).</p>
@@ -163,13 +164,8 @@
         <footer id="dark-footer" class="footer footer-dark">
             <div class="container">
                 <div class="columns">
-                    <div class="column">
+                    <div class="column column is-4">
                         <div class="footer-column">
-        
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="footer-column center">
                             <div class="footer-logo">
                                 <img src="assets/images/logos/backticklabs-white.png" alt="">
                             </div>
@@ -190,19 +186,47 @@
                             </div>
                             <div class="copyright">
                                 <span class="moto light-text">Designed and coded with <i class="fa fa-heart color-red"></i> by <a href="https://cssninja.io">CSS Ninja</a>.</span>
-                                <span class="moto light-text">Hero image designed by <a href="http://www.freepik.com">pikisuperstar / Freepik</a>.</span>
+                                <span class="moto light-text">Infographic vector designed by <a href="http://www.freepik.com">pikisuperstar / Freepik</a>.</span>
                             </div>
                             <div class="copyright">
                                 <span class="moto light-text">Copyright © 2019 Backtick Labs</span>
-                            </div>
-                            <div class="copyright">
-                                <a href="imprint.html">Imprint</a> | <a href="privacy-policy.html">Privacy Policy</a>
+                                |
+                                <span><a href="imprint.html">Imprint</a></span>
+                                |
+                                <span><a href="privacy-policy.html">Privacy Policy</a></span>
                             </div>
                         </div>
                     </div>
-                    <div class="column">
+                    <div class="column column is-6 is-offset-2">
                         <div class="footer-column">
-        
+                            <div class="contact-toggler">
+                                <ul class="tabbed-links">
+                                    <li class="is-active" data-contact="contact-email">Email</li>
+                                    <li data-contact="contact-location">Location</li>
+                                </ul>
+                                <div class="contact-blocks">
+                                    <!-- Tab content -->
+                                    <div id="contact-email" class="contact-block animated preFadeInUp fadeInUp">
+                                        <div class="contact-icon">
+                                            <i class="fa fa-envelope"></i>
+                                        </div>
+                                        <div class="contact-info">
+                                            <span>Contact us by email</span>
+                                            <span>hello@backticklabs.com</span>
+                                        </div>
+                                    </div>
+                                    <!-- Tab content -->
+                                    <div id="contact-location" class="contact-block animated preFadeInUp fadeInUp is-hidden">
+                                        <div class="contact-icon">
+                                            <i class="fa fa-map"></i>
+                                        </div>
+                                        <div class="contact-info">
+                                            <span>Visit us @ our Office</span>
+                                            <span>Tomannweg 3, 81673 Munich, Germany</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -215,5 +239,6 @@
         <!-- Bulkit js -->
         <script src="assets/js/landing.js"></script>
         <script src="assets/js/auth.js"></script>
-        <script src="assets/js/main.js"></script>    </body>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/mods.js"></script>    </body>
 </html>

@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134156914-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-134156914-1');
+        </script>
+
         <!-- Required Meta Tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -42,7 +52,7 @@
                     <div class="columns">
                         <div class="column is-8 is-offset-2">
                             <div class="content">
-                                <h1>Imprint</h1>
+                                <h2>Imprint</h2>
                                 <p>
                                     Backtick Labs GmbH<br>
                                     Tomannweg 3<br>
@@ -56,7 +66,7 @@
                                     <!--Fax: 123/123457-->
                                 </p>
                                 <p>
-                                    Email: hello@backticklabs.com
+                                    Email: info@backticklabs.com
                                 </p>
                                 <p>
                                     Registergericht: Amtsgericht München<br>
@@ -79,13 +89,8 @@
         <footer id="dark-footer" class="footer footer-dark">
             <div class="container">
                 <div class="columns">
-                    <div class="column">
+                    <div class="column column is-4">
                         <div class="footer-column">
-        
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="footer-column center">
                             <div class="footer-logo">
                                 <img src="assets/images/logos/backticklabs-white.png" alt="">
                             </div>
@@ -106,19 +111,47 @@
                             </div>
                             <div class="copyright">
                                 <span class="moto light-text">Designed and coded with <i class="fa fa-heart color-red"></i> by <a href="https://cssninja.io">CSS Ninja</a>.</span>
-                                <span class="moto light-text">Hero image designed by <a href="http://www.freepik.com">pikisuperstar / Freepik</a>.</span>
+                                <span class="moto light-text">Infographic vector designed by <a href="http://www.freepik.com">pikisuperstar / Freepik</a>.</span>
                             </div>
                             <div class="copyright">
                                 <span class="moto light-text">Copyright © 2019 Backtick Labs</span>
-                            </div>
-                            <div class="copyright">
-                                <a href="imprint.html">Imprint</a> | <a href="privacy-policy.html">Privacy Policy</a>
+                                |
+                                <span><a href="imprint.html">Imprint</a></span>
+                                |
+                                <span><a href="privacy-policy.html">Privacy Policy</a></span>
                             </div>
                         </div>
                     </div>
-                    <div class="column">
+                    <div class="column column is-6 is-offset-2">
                         <div class="footer-column">
-        
+                            <div class="contact-toggler">
+                                <ul class="tabbed-links">
+                                    <li class="is-active" data-contact="contact-email">Email</li>
+                                    <li data-contact="contact-location">Location</li>
+                                </ul>
+                                <div class="contact-blocks">
+                                    <!-- Tab content -->
+                                    <div id="contact-email" class="contact-block animated preFadeInUp fadeInUp">
+                                        <div class="contact-icon">
+                                            <i class="fa fa-envelope"></i>
+                                        </div>
+                                        <div class="contact-info">
+                                            <span>Contact us by email</span>
+                                            <span>hello@backticklabs.com</span>
+                                        </div>
+                                    </div>
+                                    <!-- Tab content -->
+                                    <div id="contact-location" class="contact-block animated preFadeInUp fadeInUp is-hidden">
+                                        <div class="contact-icon">
+                                            <i class="fa fa-map"></i>
+                                        </div>
+                                        <div class="contact-info">
+                                            <span>Visit us @ our Office</span>
+                                            <span>Tomannweg 3, 81673 Munich, Germany</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -131,5 +164,6 @@
         <!-- Bulkit js -->
         <script src="assets/js/landing.js"></script>
         <script src="assets/js/auth.js"></script>
-        <script src="assets/js/main.js"></script>    </body>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/mods.js"></script>    </body>
 </html>
